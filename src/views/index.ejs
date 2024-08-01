@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="/style/home.css">
+    <script src="/js/home.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+          <div class="logo-container">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.4l4rvCbIwe0x-ZLuTh0HlAHaF7&pid=Api&P=0" alt="book-logo" id="header-img" class="logo">
+            <span class="the-product">Classic Books</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#for-sale" class="nav-link">For Sale</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <div class="container">
+            <img src="/images/Book.png" height="800" width="1600" alt="">
+        </div>
+        
+      </section>
+      <section id="features">
+        <div class="feature">
+          <i class="ri-file-paper-fill ri-4x icon"></i>
+          <div class="info-box">
+            <h2>Premium Materials</h2>
+            <p>Our Books use the best paper which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <i class="ri-truck-fill ri-4x icon"></i>
+          <div class="info-box">
+            <h2>1 Day Shipping</h2>
+            <p>We make sure you receive your classic book as soon as possible so that you can start reading immediately. We also provide free returns if you are not satisfied.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <i class="ri-book-open-line ri-4x icon"></i>
+          <div class="info-box">
+            <h2>Quality Books Only</h2>
+            <p>We make sure to only provide awesome classic books. e guarantee that the book you buy is one of the top classic books on the market.</p>
+          </div>
+        </div>
+      </section>
+      <section id="for-sale">
+        <h2 class="mb-3">For Sale</h2>
+        <main>
+            <div class="container">
+                <div class="cards d-flex justify-content-between flex-wrap gap-4">
+                    <% books.forEach(el => { %>
+                        <div class="card" style="width: 18rem;">
+                            <img src="<%= el.image %>" class="card-img-top" alt="<%= el.title %>">
+                            <div class="card-body">
+                              <h5 class="card-title"><%= el.title %></h5>
+                              <p class="card-text"><%= el.desc %></p>
+                              <h6><%= el.price %> so'm</h6>
+                              <a href="/orders/<%= el.id %>" class="btn btn-primary">Add book</a>
+                            </div>
+                          </div>
+                    <% }) %>
+                </div>
+            </div>
+        </main>
+      </section>
+</body>
+</html>

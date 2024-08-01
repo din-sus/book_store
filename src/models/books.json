@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Три Товарища",
+        "desc": "Роман который описывает трех лучших друзей, и показывает что такое настоящяя дружба",
+        "count": 100,
+        "price": 70000,
+        "author_id": 1,
+        "category_id": 1,
+        "image": "https://assets.asaxiy.uz/product/items/desktop/145744c64d9242736165b1eeea7ea5a32020121816393862319v2HmRkGDtS.jpg.webp"
+    },
+    {
+        "id": 2,
+        "title": "Смерть на Ниле",
+        "desc": "Детектив который погружает нас в историю где были убиты люди на крузе по реке Нил, и детектив Пуаро который берется за это дело",
+        "count": 60,
+        "price": 60000,
+        "author_id": 2,
+        "category_id": 2,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKuAVYMEPk7hpUaMTBxyzIky3RZfecNS0huw&s"
+    },
+    {
+        "id": 3,
+        "title": "Воля к Власти",
+        "desc": "Книга где Ницше передает самые важные мысли жизни",
+        "count": 30,
+        "price": 40000,
+        "author_id": 3,
+        "category_id": 3,
+        "image": "https://cdn.azbooka.ru/cv/w1100/c23e3246-efc0-4a7c-aef0-51a4d16156bc.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Приют грёз",
+        "desc": "Отличный роман описывающий частые ошибки молодости",
+        "count": "34",
+        "price": "35000",
+        "author_id": "1",
+        "category_id": "1",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-IM5C5h9S7rFz8AJ6UqQP3zdOphormVaXg&s"
+    },
+    {
+        "id": 5,
+        "title": "otgan kunlar",
+        "desc": "sdf",
+        "count": "12",
+        "price": "130000",
+        "author_id": "2",
+        "category_id": "1",
+        "image": "https://samrusteatr.uz/wp-content/uploads/2022/01/minuvshie_dni.jpg"
+    }
+]
