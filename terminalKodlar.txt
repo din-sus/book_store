@@ -1,0 +1,121 @@
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git init
+Initialized empty Git repository in C:/Users/User/Desktop/Backend_node_js/ekzamen_masalalar/bookstore/.git/
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git add .
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/models/admins.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/models/authors.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/models/books.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/models/categories.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/models/orders.json', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git commit -m "full project"
+[master (root-commit) edee519] full project
+ 29 files changed, 2664 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 src/controllers/adminController.js
+ create mode 100644 src/controllers/homeController.js
+ create mode 100644 src/controllers/loginController.js
+ create mode 100644 src/controllers/ordersController.js
+ create mode 100644 src/index.js
+ create mode 100644 src/middleware/verifyToken.js
+ create mode 100644 src/models/admins.json
+ create mode 100644 src/models/authors.json
+ create mode 100644 src/models/books.json
+ create mode 100644 src/models/categories.json
+ create mode 100644 src/models/orders.json
+ create mode 100644 src/public/images/Book.png
+ create mode 100644 src/public/js/home.js
+ create mode 100644 src/public/js/login.js
+ create mode 100644 src/public/style/home.css
+ create mode 100644 src/public/style/login.css
+ create mode 100644 src/public/style/notfound.css
+ create mode 100644 src/public/style/orders.css
+ create mode 100644 src/routes/router.js
+ create mode 100644 src/utils/fs.js
+ create mode 100644 src/utils/jwt.js
+ create mode 100644 src/views/admin.ejs
+ create mode 100644 src/views/index.ejs
+ create mode 100644 src/views/login.ejs
+ create mode 100644 src/views/notfound.ejs
+ create mode 100644 src/views/orders.ejs
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git remote add origin https://github.com/din-sus/book_store.git
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git branch -M main
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git push -u origin main
+Enumerating objects: 42, done.
+Counting objects: 100% (42/42), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (42/42), 2.94 MiB | 1.09 MiB/s, done.
+Total 42 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/din-sus/book_store.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git branch din
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git branch
+  din
+* main
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git checkout din
+Switched to branch 'din'
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git checkout din 
+Switched to branch 'din'
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git add .
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git commit -m "added info about project"
+[din 01a272d] added info about project
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aboutTheProject.txt
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git push original din
+fatal: 'original' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git push origin din
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 306 bytes | 306.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'din' on GitHub by visiting:
+remote:      https://github.com/din-sus/book_store/pull/new/din
+remote:
+To https://github.com/din-sus/book_store.git
+ * [new branch]      din -> din
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git checkout din 
+Switched to branch 'din'
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git log
+commit 01a272dd31074b0c61c179c0624d3c2231c56c0e (HEAD -> din, origin/din)
+Author: din-sus <tuhtamatovdinmuhammad2@gmail.com>
+Date:   Thu Aug 1 17:26:15 2024 +0500
+
+    added info about project
+
+commit edee519a4c1611b0412532191c2ae97d88f8bbbc (origin/main, main)
+Author: din-sus <tuhtamatovdinmuhammad2@gmail.com>
+Date:   Thu Aug 1 17:15:32 2024 +0500
+
+    full project
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git merge din
+Updating edee519..01a272d
+Fast-forward
+ aboutTheProject.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aboutTheProject.txt
+PS C:\Users\User\Desktop\Backend_node_js\ekzamen_masalalar\bookstore> git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/din-sus/book_store.git
+   edee519..01a272d  main -> main
